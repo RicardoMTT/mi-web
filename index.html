@@ -8,11 +8,13 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta content="" name="description" />
     <meta content="" name="author" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="favicon/apple-touch-icon.png"
-    />
+    <!--
+      Casi todos los navegadores ya cuentan con un soporte extenso de diferentes 
+      formatos de imágenes para mostrar el favicon , nel href no necesariamente debe tener el nombre favicon.ico
+      en este caso le puse icon.gif
+      https://es.stackoverflow.com/questions/22067/favicon-formato-ico-o-png-y-qu%c3%a9-rel/22082#22082
+    -->
+    <link rel="icon" type="image/gif" href="./img/icon.png" />
 
     <title>Ricardo Tovar</title>
     <!-- Bootstrap core CSS -->
@@ -87,22 +89,25 @@
           <div class="col-md-6">
             <img
               class="profilepic"
-              src="img/profile.jpg"
+              src="img/icon.png"
               width="400px"
               height="400px"
             />
-
-            <h2>Sobre mí</h2>
           </div>
 
-          <div class="col-md-6" style="display: flex; align-items: center">
+          <div
+            class="col-md-6"
+            style="display: flex; align-items: center; flex-direction: column"
+          >
+            <h2>Sobre mí</h2>
+
             <p class="lead">
               Soy estudiante de la carrera de Ingenieria de Software de la I'm a
               Student Software Engineer from Lima Peru and
               <span
                 ><a href="#">Universidad Nacional Mayor de San Marcos</a></span
               >Actualmente me desempeño como desarrollador Frontend usando el
-              framework <strong><span>Angular</span></strong>
+              framework <strong><span>Angular.</span></strong>
             </p>
           </div>
 
@@ -132,7 +137,7 @@
           <div class="col-md-6 text-center">
             <i class="fa fa-mobile fa-4x"></i>
             <h2>Aplicaciones Mobiles</h2>
-            <p style="padding: 0 30px">
+            <p style="padding: 0 30px; font-size: 20px">
               He desarrollado aplicaciones usando el SDK de flutter, asi como
               tambien la tecnologia Ionic basado en Angular
             </p>
@@ -149,14 +154,14 @@
             <i class="fa fa-window-maximize fa-4x"></i>
             <h2>Aplicaciones web</h2>
 
-            <p style="padding: 0 30px">
+            <p style="padding: 0 30px; font-size: 20px">
               He realizado aplicaciones web usando el framework Angular, asi
               como tambien Vanilla JavaScript
             </p>
             <br />
 
             <div class="text-left">
-              <ul>
+              <ul class="lista">
                 <li><span>Carrito de compras </span><br /></li>
                 <li>
                   <span>Sistema backoffice</span>
@@ -181,7 +186,7 @@
             <i class="fa fa-address-card fa-4x"></i>
             <h2>Frontend</h2>
             <div class="text-left">
-              <ul>
+              <ul class="lista">
                 <li>HTML5</li>
                 <li>CSS3</li>
                 <li>Sass</li>
@@ -195,7 +200,7 @@
             <i class="fa fa-server fa-4x"></i>
             <h2>Backend</h2>
             <div class="text-left">
-              <ul>
+              <ul class="lista">
                 <li>Nodejs</li>
                 <li>Spring</li>
                 <li>TypeORM</li>
@@ -211,7 +216,7 @@
             <br />
 
             <div class="text-left">
-              <ul>
+              <ul class="lista">
                 <li><span>Mysql</span><br /></li>
                 <li>
                   <span>Sql Server</span>

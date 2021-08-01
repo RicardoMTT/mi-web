@@ -207,6 +207,10 @@ section {
   text-align: center;
 }
 
+.lista li {
+  font-size: 20px;
+}
+
 /* 01. Timeline Styles
  * =================================================================== */
 
